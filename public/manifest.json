@@ -1,0 +1,17 @@
+{
+  "name": "실시간 P2P 채팅",
+  "short_name": "P2P채팅",
+  "description": "보안이 강화된 실시간 P2P 및 서버 채팅 애플리케이션",
+  "start_url": "/?v=2",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#f97316",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/5962/5962463.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

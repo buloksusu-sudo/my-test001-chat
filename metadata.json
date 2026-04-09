@@ -1,0 +1,5 @@
+{
+  "name": "실시간 P2P 채팅",
+  "description": "WebRTC와 Socket.io를 결합한 스마트 실시간 채팅 서비스입니다. 2인 접속 시 P2P로 직접 통신하며, 방장 시스템과 파일 전송 기능을 지원합니다.",
+  "requestFramePermissions": []
+}

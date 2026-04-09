@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>실시간 P2P 채팅</title>
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#f97316" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="P2P채팅" />
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/5962/5962463.png" />
+    
+    <!-- Prevent zooming on mobile inputs -->
+    <style>
+      input, textarea { font-size: 16px !important; }
+      #root:empty {
+        background: #09090b;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f97316;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">접속 중...</div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Register the service worker normally
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('SW registered'))
+            .catch(err => console.log('SW error', err));
+        });
+      }
+      
+      // Clear any old caches manually from the main thread if possible
+      if ('caches' in window) {
+        caches.keys().then(names => {
+          for (let name of names) caches.delete(name);
+        });
+      }
+    </script>
+  </body>
+</html>
+
