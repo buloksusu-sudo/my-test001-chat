@@ -398,7 +398,7 @@ export default function App() {
                 <MessageSquare className="text-white w-6 h-6" />
               </div>
               <div>
-                <h1 className="font-bold text-lg tracking-tight">Main Room</h1>
+                <h1 className="font-bold text-lg tracking-tight">망고챗</h1>
                 <div className="flex items-center gap-1.5 text-xs text-zinc-500">
                   <span className={cn("w-2 h-2 rounded-full", isP2P ? "bg-green-500" : "bg-blue-500")} />
                   {isP2P ? "P2P 연결됨" : "서버 연결됨"}
@@ -502,7 +502,7 @@ export default function App() {
             >
               <Menu size={20} />
             </button>
-            <h1 className="font-bold text-sm tracking-tight">Main Room</h1>
+            <h1 className="font-bold text-sm tracking-tight">망고챗</h1>
           </div>
           <div className="flex items-center gap-2 text-[10px] text-zinc-500">
             <span className={cn("w-1.5 h-1.5 rounded-full", isP2P ? "bg-green-500" : "bg-blue-500")} />
