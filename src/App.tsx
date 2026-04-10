@@ -71,7 +71,7 @@ export default function App() {
   useEffect(() => {
     const handleFocus = () => {
       unreadCountRef.current = 0;
-      document.title = "실시간 P2P 채팅";
+      document.title = "망고가족-챗";
     };
     window.addEventListener('focus', handleFocus);
     return () => window.removeEventListener('focus', handleFocus);

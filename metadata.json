@@ -1,5 +1,5 @@
 {
-  "name": "실시간 P2P 채팅",
-  "description": "WebRTC와 Socket.io를 결합한 스마트 실시간 채팅 서비스입니다. 2인 접속 시 P2P로 직접 통신하며, 방장 시스템과 파일 전송 기능을 지원합니다.",
+  "name": "망고가족-챗",
+  "description": "망고가족을 위한 실시간 보안 채팅 서비스입니다. WebRTC와 Socket.io를 결합하여 P2P 통신과 파일 전송을 지원합니다.",
   "requestFramePermissions": []
 }
